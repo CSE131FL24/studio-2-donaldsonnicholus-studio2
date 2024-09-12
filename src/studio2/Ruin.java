@@ -15,9 +15,9 @@ public class Ruin {
 		System.out.println("How many simulations do you want to run?");
 		double simulations = in.nextDouble();
 		int numLosses = 0;
-		int gamesPlayed = 0;
 		for (int i = 1; i <= simulations; i++) {
 			double money = startAmount;
+			int gamesPlayed = 0;
 			while ((money > 0) && (money < winLimit)) {
 				double chance = Math.random();
 				if (chance <= winChance) {
